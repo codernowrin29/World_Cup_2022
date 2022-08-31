@@ -70,12 +70,117 @@ body {
 
 /*Second section*/
 
-/*Second section done*/
-/*Footer section*/
-.footer {
-    background-color: rgb(58, 54, 54);
+.second-section {
+    width: 85%;
+    margin-left: 8%;
+}
+
+.second-section-main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 20%;
+    grid-column-gap: 5%;
+    margin-top: 10%;
+
+}
+
+.three-btn {
+    background-color: black;
+    border-radius: 10px;
+
+}
+
+.btn {
+    padding: 20px;
+}
+
+.btn button {
+    display: flex;
+    padding: 12px 35px;
+    margin: 1%;
+    font-size: 1.5rem;
+
+}
+
+button {
+    border-radius: 10px;
+}
+
+button a {
+    text-decoration: none;
+
+}
+
+.btn-001 {
+    margin-top: 10%;
+    border-radius: 5px;
+
+}
+
+.btn-001 a {
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.red-btn {
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    padding: 12px 25px;
+}
+
+/*flags item*/
+.flag-flex {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 300px;
+    box-shadow: 5px 5px 20px gray;
+    border-radius: 10px;
+}
+
+.flag-half {
+    width: 80%;
+    padding: 2%;
+}
+
+.flag-half img {
+    width: 100%;
+}
+
+.flexible {
+    display: flex;
+    align-items: center;
+
+}
+
+.country {
+    position: relative;
+    left: 19%;
+    align-items: center;
+    top: 5%;
+    font-size: 1.3rem;
+}
+
+.country h6 {
+    position: relative;
+    left: 10%;
+}
+
+#vs {
+    position: relative;
+    left: 40%;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/*flags item done*/
+
+/*Second section done*/
+
+/*Footer section*/
+footer {
+    background-color: rgb(58, 54, 54);
+    height: 400px;
     margin-top: 15%;
 }
 
@@ -89,23 +194,22 @@ body {
 }
 
 hr {
-    width: 1320px;
-    height: 0px;
+    width: 80%;
 }
 
 .goal-info {
     display: flex;
-    color: #B9B9B9;
+    align-items: center;
     justify-content: center;
+    color: #B9B9B9;
     padding-top: 20px;
 
 }
 
 .info {
     color: white;
-    padding-left: 25px;
-    padding-right: 10px;
-    text-decoration: none;
+    padding: 10px;
+    font-size: 1rem;
 }
 
 /*icons*/
@@ -113,22 +217,32 @@ hr {
     display: flex;
     justify-content: center;
     color: white;
+    font-size: 2rem;
 }
 
 .pro-icon {
-    padding-left: 18px;
-    padding-right: 20px;
-    padding-top: 10px;
+    padding: 20px;
+    transform: 0.5;
+}
+
+.pro-icon:hover {
+    color: orangered;
+    transition: 0.5s;
 }
 
 /*Footer section done*/
 
 /*media query*/
+/*Mobile Device*/
 @media screen and (max-width: 776px) {
+
+    /*First Section*/
     .first-section {
         width: 100%;
         margin-left: 0;
         padding-left: 0;
+        margin-top: 0;
+        border-radius: 0;
     }
 
     .main-flex {
@@ -155,5 +269,38 @@ hr {
     .half-width img {
         width: 100%;
         margin-left: 10%;
+    }
+
+    /*Second Section*/
+    .second-section {
+        width: 85%;
+        margin-left: 7%;
+    }
+
+    .second-section-main {
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 2%;
+        margin-top: 2%;
+    }
+
+    /*Footer Section*/
+    footer {
+        height: 600px;
+        margin-top: 400px;
+    }
+
+    .goal-info {
+        flex-direction: column;
+        padding-top: 0;
+        padding: 0;
+    }
+
+    .info {
+        padding: 0;
+        font-size: 10px;
+    }
+
+    .pro-icons {
+        font-size: 1rem;
     }
 }
