@@ -91,14 +91,14 @@ body {
 }
 
 .btn {
-    padding: 20px;
+    padding: 5px;
 }
 
 .btn button {
     display: flex;
-    padding: 12px 35px;
+    padding: 10px 15px;
     margin: 1%;
-    font-size: 1.5rem;
+    font-size: 1rem;
 
 }
 
@@ -119,7 +119,7 @@ button a {
 
 .btn-001 a {
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 .red-btn {
