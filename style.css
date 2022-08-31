@@ -91,13 +91,12 @@ body {
 }
 
 .btn {
-    padding: 5%;
-
+    padding: 20px;
 }
 
 .btn button {
     display: flex;
-    padding: 12px 25px;
+    padding: 12px 35px;
     margin: 1%;
     font-size: 1.5rem;
 
@@ -118,10 +117,16 @@ button a {
 
 }
 
+.btn-001 a {
+    text-decoration: none;
+    font-size: 2rem;
+}
+
 .red-btn {
     background-color: red;
     color: white;
     border-radius: 10px;
+    padding: 12px 25px;
 }
 
 /*players item*/
