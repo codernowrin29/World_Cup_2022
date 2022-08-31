@@ -85,7 +85,7 @@ body {
 }
 
 .three-btn {
-    background-color: black;
+    background: none;
     border-radius: 10px;
 
 }
@@ -119,7 +119,7 @@ button a {
 
 .btn-001 a {
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .red-btn {
