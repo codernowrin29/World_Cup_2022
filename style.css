@@ -70,12 +70,89 @@ body {
 
 /*Second section*/
 
+.second-section {
+    width: 85%;
+    margin-left: 8%;
+}
+
+.second-section-main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 20%;
+    grid-column-gap: 5%;
+    margin-top: 10%;
+
+}
+
+.three-btn {
+    background-color: black;
+    border-radius: 10px;
+
+}
+
+.btn {
+    padding: 5%;
+
+}
+
+.btn button {
+    display: flex;
+    padding: 12px 25px;
+    margin: 1%;
+    font-size: 1.5rem;
+
+}
+
+button {
+    border-radius: 10px;
+}
+
+button a {
+    text-decoration: none;
+
+}
+
+.btn-001 {
+    margin-top: 10%;
+    border-radius: 5px;
+
+}
+
+.red-btn {
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+}
+
+/*players item*/
+
+.icon-parent {
+    display: flex;
+    align-items: center;
+    color: black;
+    justify-content: space-evenly;
+
+}
+
+.player-4 {
+    display: none;
+}
+
+.transfer-btn {
+    margin-top: 10%;
+    padding: 7px 20px;
+}
+
+.players-item img {
+    width: 100%;
+}
+
 /*Second section done*/
 
 /*Footer section*/
 footer {
     background-color: rgb(58, 54, 54);
-    height: 300px;
+    height: 400px;
     margin-top: 15%;
 }
 
@@ -93,8 +170,9 @@ hr {
 }
 
 .goal-info {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #B9B9B9;
     padding-top: 20px;
 
@@ -102,9 +180,8 @@ hr {
 
 .info {
     color: white;
-    padding-left: 25px;
-    padding-right: 10px;
-    text-decoration: none;
+    padding: 10px;
+    font-size: 1rem;
 }
 
 /*icons*/
@@ -112,24 +189,32 @@ hr {
     display: flex;
     justify-content: center;
     color: white;
+    font-size: 2rem;
 }
 
 .pro-icon {
-    padding-left: 18px;
-    padding-right: 20px;
-    padding-top: 10px;
+    padding: 20px;
+    transform: 0.5;
+}
+
+.pro-icon:hover {
+    color: orangered;
+    transition: 0.5s;
 }
 
 /*Footer section done*/
 
 /*media query*/
 /*Mobile Device*/
-/*First Section*/
 @media screen and (max-width: 776px) {
+
+    /*First Section*/
     .first-section {
         width: 100%;
         margin-left: 0;
         padding-left: 0;
+        margin-top: 0;
+        border-radius: 0;
     }
 
     .main-flex {
@@ -157,15 +242,37 @@ hr {
         width: 100%;
         margin-left: 10%;
     }
-}
 
-/*Footer Section*/
-@media screen and (max-width: 776px) {
+    /*Second Section*/
+    .second-section {
+        width: 85%;
+        margin-left: 7%;
+    }
+
+    .second-section-main {
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 2%;
+        margin-top: 2%;
+    }
+
+    /*Footer Section*/
     footer {
-        height: 380px;
+        height: 600px;
+        margin-top: 400px;
     }
 
     .goal-info {
-        grid-template-columns: repeat(3, 1fr);
+        flex-direction: column;
+        padding-top: 0;
+        padding: 0;
+    }
+
+    .info {
+        padding: 0;
+        font-size: 10px;
+    }
+
+    .pro-icons {
+        font-size: 1rem;
     }
 }
