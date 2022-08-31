@@ -260,6 +260,14 @@ hr {
         margin-top: 2%;
     }
 
+    .three-btn {
+        background: none;
+        border-radius: 10px;
+        position: relative;
+        left: 20%;
+
+    }
+
     /*Footer Section*/
     footer {
         height: 600px;
