@@ -1,0 +1,159 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+/*Fonts end*/
+
+/*Common styles*/
+body {
+    margin: 0;
+}
+
+/*First section*/
+.first-section {
+    background-color: rgb(58, 54, 54);
+    padding-left: 90px;
+    width: 80%;
+    margin-left: 8%;
+    margin-top: 5%;
+    border-radius: 30px;
+}
+
+.main-flex {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+}
+
+.half-width {
+    width: 80%;
+}
+
+.half-width h1 {
+    font-size: 2.8rem;
+    color: white;
+}
+
+.half-width h6 {
+    font-size: 1rem;
+    color: white;
+    font-weight: 100;
+}
+
+.half-width span {
+    color: orangered;
+    font-family: 'Dancing Script', cursive;
+}
+
+.half-width img {
+    width: 90%;
+    padding-top: 40px;
+    position: relative;
+    left: 10%;
+    margin-left: 30%;
+}
+
+.btn-01 {
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    padding: 15px 30px;
+    border-radius: 5px;
+}
+
+/*hover*/
+.btn-01:hover {
+    background-color: orangered;
+}
+
+/*First section done*/
+
+
+/*Second section*/
+
+/*Second section done*/
+/*Footer section*/
+.footer {
+    background-color: rgb(58, 54, 54);
+    width: 100%;
+    height: 300px;
+    margin-top: 15%;
+}
+
+.goal {
+    color: orangered;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 600;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+hr {
+    width: 1320px;
+    height: 0px;
+}
+
+.goal-info {
+    display: flex;
+    color: #B9B9B9;
+    justify-content: center;
+    padding-top: 20px;
+
+}
+
+.info {
+    color: white;
+    padding-left: 25px;
+    padding-right: 10px;
+    text-decoration: none;
+}
+
+/*icons*/
+.pro-icons {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.pro-icon {
+    padding-left: 18px;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+/*Footer section done*/
+
+/*media query*/
+@media screen and (max-width: 776px) {
+    .first-section {
+        width: 100%;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .main-flex {
+        flex-direction: column;
+    }
+
+    .half-width h1 {
+        font-size: 2rem;
+    }
+
+    .half-width h6 {
+        font-size: 15px;
+    }
+
+    .half-width {
+        text-align: center;
+    }
+
+    .variation {
+        padding-left: 24%;
+        padding-bottom: 10%;
+    }
+
+    .half-width img {
+        width: 100%;
+        margin-left: 10%;
+    }
+}

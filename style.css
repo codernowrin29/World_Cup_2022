@@ -1,3 +1,12 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+/*Fonts end*/
+
+/*Common styles*/
+body {
+    margin: 0;
+}
+
 /*First section*/
 .first-section {
     background-color: rgb(58, 54, 54);
@@ -32,6 +41,7 @@
 
 .half-width span {
     color: orangered;
+    font-family: 'Dancing Script', cursive;
 }
 
 .half-width img {
@@ -50,9 +60,71 @@
     border-radius: 5px;
 }
 
-/*First section finished*/
+/*hover*/
+.btn-01:hover {
+    background-color: orangered;
+}
+
+/*First section done*/
+
+
+/*Second section*/
+
+/*Second section done*/
+
+/*Footer section*/
+footer {
+    background-color: rgb(58, 54, 54);
+    height: 300px;
+    margin-top: 15%;
+}
+
+.goal {
+    color: orangered;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 600;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+hr {
+    width: 80%;
+}
+
+.goal-info {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    color: #B9B9B9;
+    padding-top: 20px;
+
+}
+
+.info {
+    color: white;
+    padding-left: 25px;
+    padding-right: 10px;
+    text-decoration: none;
+}
+
+/*icons*/
+.pro-icons {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.pro-icon {
+    padding-left: 18px;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+/*Footer section done*/
 
 /*media query*/
+/*Mobile Device*/
+/*First Section*/
 @media screen and (max-width: 776px) {
     .first-section {
         width: 100%;
@@ -84,5 +156,16 @@
     .half-width img {
         width: 100%;
         margin-left: 10%;
+    }
+}
+
+/*Footer Section*/
+@media screen and (max-width: 776px) {
+    footer {
+        height: 380px;
+    }
+
+    .goal-info {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
